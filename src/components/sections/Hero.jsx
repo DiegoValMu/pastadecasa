@@ -12,7 +12,7 @@ export function Hero() {
         </div>
       </div>
 
-      <p className="text-sm tracking-[0.4em] uppercase text-[#D4A53A] mb-4">
+      <p className="text-md tracking-[0.4em] uppercase text-[#D4A53A] mb-4">
         Pasta artesanal
       </p>
       <h1 className="text-5xl md:text-7xl font-semibold tracking-tight uppercase leading-none mb-6">
@@ -20,7 +20,7 @@ export function Hero() {
       </h1>
       <p className="max-w-md text-lg text-[#3A2F28]/65 leading-relaxed mb-10">
         Elaborada a mano con ingredientes seleccionados. Lista para cocinar,
-        congelar o pedir a tu medida.
+        congelar o pedir a tu gusto.
       </p>
       <div className="flex flex-col sm:flex-row gap-4">
         <a

@@ -9,9 +9,9 @@ export function Encargo() {
           ¿Algo en especial?
         </h2>
         <p className="text-[#3A2F28]/65 leading-relaxed mb-10">
-          Hacemos encargos para eventos, regalos o simplemente si quieres una
-          pasta que no tenemos en carta. Escríbenos con al menos 48 horas de
-          anticipación.
+          Elaboramos tu pasta fresca, lisa o rellena, con los sabores de tu
+          elección. Reserva con un mínimo de 48 horas de anticipación para
+          garantizar la mejor preparación.
         </p>
         <a
           href="https://wa.me/56912345678"

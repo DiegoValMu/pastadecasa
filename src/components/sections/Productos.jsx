@@ -1,5 +1,6 @@
 import { Tag } from "../ui/Tag";
 import { productos } from "../data/productosData";
+import Image from "next/image";
 
 export function Productos() {
   return (
@@ -16,16 +17,23 @@ export function Productos() {
               key={p.nombre}
               className="group border border-[#3A2F28]/10 p-8 hover:border-[#D4A53A] transition-colors"
             >
-              <div className="w-full aspect-square bg-[#E6C16A]/15 mb-6 flex items-center justify-center text-[#D4A53A]/40 text-xs tracking-widest uppercase">
-                foto
+              <div className="relative w-full aspect-square bg-[#E6C16A]/15 mb-6 overflow-hidden">
+                {p.imagen && (
+                  <Image
+                    src={p.imagen}
+                    alt={p.nombre}
+                    fill
+                    className="object-cover"
+                  />
+                )}
               </div>
-              <p className="text-xs tracking-[0.25em] uppercase text-[#D4A53A] mb-2">
+              <p className="text-md tracking-[0.25em] uppercase text-[#D4A53A] mb-2">
                 {p.tipo}
               </p>
-              <h3 className="text-xl font-semibold uppercase tracking-wide mb-3">
+              <h3 className="text-xl font-semibold uppercase tracking-wide leading-7 mb-3 min-h-14">
                 {p.nombre}
               </h3>
-              <p className="text-[#3A2F28]/60 text-sm leading-relaxed mb-5">
+              <p className="text-[#3A2F28]/60 text-sm leading-6 mb-5 min-h-[4.5rem]">
                 {p.descripcion}
               </p>
               <div className="flex items-center justify-between">
